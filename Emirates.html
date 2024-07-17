@@ -133,31 +133,10 @@
       font-size: 18px;
       line-height: 1.61rem;
     }
-    .fly-better {
-      position: absolute;
-      height: 50px;
-      right: 50px;
-    }
-    .fly-better {
-      top: 30px;
-    }
-    .fly-logo {
-      width: 169px;
-      height: 50px;
-    }
-    .fly-better a {
-      position: relative;
-      top: 60px;
-      transform: translate(90px);
-      text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
-      padding: 0;
-      display: block;
-    }
     @media only screen and (min-width: 1024px) {
       .widget-container {
         max-width: 1200px;
         padding-left: 50px;
-        padding-right: 50px;
         height: 233px;
       }
     }
@@ -281,13 +260,14 @@
     .arrival-dropdown {
       width: 411.9px;
       height: 60px;
-      padding-left: 0;
-      margin-right: 20px;
       border: 2px solid rgb(0, 0, 0, 0.5);
       border-radius: 5px;
     }
     .arrival-dropdown div {
-      padding: 24px 40px 11px 43px;
+      padding: 10px 10px 10px;
+    }
+    .departure-dropdown div {
+      padding: 10px 10px 10px;
     }
     .continue {
     }
@@ -303,14 +283,12 @@
       width: 137.25px;
       display: table-cell;
       height: 119px;
-      border-right: 1px solid #d8d8d8;
+      border: 1px solid #d8d8d8;
+      border-bottom: white;
     }
-    .product-block ul{
+    .product-block ul {
       display: table;
       list-style: none;
-      width: 100%;
-      padding: 0;
-      margin: 0;
     }
     .product-block li a {
       text-decoration: underline;
@@ -321,8 +299,7 @@
       height: 101px;
       padding: 29px 0px 22px;
     }
-    .product-block-container{
-      position: relative;
+    .product-block-container {
     }
     .continue button {
       width: 195.59px;
@@ -335,6 +312,30 @@
       border-radius: 5px;
       font-size: 16px;
       font-weight: 700;
+    }
+    .skywards-login {
+      width: 1100px;
+      height: 60.58px;
+      margin: 25px auto;
+      display: flex;
+      background-color: black;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      border: 5px solid black;
+      border-radius: 5px;
+    }
+    .skywards-logo {
+      width: 260px;
+      height: 100.58px;
+    }
+    .fares-container {
+      width: 1200px;
+      height: 777px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: 50px auto 0;
     }
   </style>
   <body>
@@ -379,14 +380,6 @@
           </span>
         </h1>
         <a href="#" class="learn">Learn more</a>
-      </div>
-      <div class="fly-better">
-        <a href="https://www.emirates.com/in/english/experience/fly-better/"
-          ><img
-            class="fly-logo"
-            src="	https://c.ekstatic.net/ecl/logos/emirates/emirates-fly-better-white.svg?h=ASXr1bEvRLq6igZoljExYw"
-            alt="Fly-Better"
-        /></a>
       </div>
       <div class="widget-container">
         <div class="container-items">
@@ -433,14 +426,13 @@
                 <label>Departure Airport</label>
                 <br />
                 <select>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
+                  <option>Ahamdabad</option>
+                  <option>Mumbai</option>
+                  <option>Delhi</option>
+                  <option>Mexico</option>
+                  <option>Abu-Dhabi</option>
+                  <option>New York</option>
+                  <option>San-fransisco</option>
                 </select>
               </div>
             </div>
@@ -449,13 +441,13 @@
                 <label>Arrival Airport</label>
                 <br />
                 <select>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
+                  <option>Ahamdabad</option>
+                  <option>Mumbai</option>
+                  <option>Delhi</option>
+                  <option>Mexico</option>
+                  <option>Al-Ain</option>
+                  <option>Abu-Dhabi</option>
+                  <option>New York</option>
                 </select>
               </div>
             </div>
@@ -468,22 +460,87 @@
       <div class="product-block">
         <section class="product-block-container">
           <ul>
-            <li><a href="#">Hotels</a></li>
-            <li><i class="fa-solid fa-car"></i><a href="#">Car rentals</a></li>
-            <li>
+            <li style="text-align: center"><a href="#">Hotels</a></li>
+            <li style="text-align: center">
+              <i class="fa-solid fa-car"></i><a href="#">Car rentals</a>
+            </li>
+            <li style="text-align: center">
               <i class="fa-solid fa-sailboat"></i
               ><a href="#">Tours & activities</a>
             </li>
-            <li>
+            <li style="text-align: center">
               <i class="fa-regular fa-sun"></i><a href="#">Book a Holiday</a>
             </li>
-            <li><a href="#">Chauffeur-drive</a></li>
-            <li><a href="#">Meet & Greet</a></li>
-            <li><a href="#">Airports transfers</a></li>
-            <li><a href="#">Eurail</a></li>
+            <li style="text-align: center"><a href="#">Chauffeur-drive</a></li>
+            <li style="text-align: center"><a href="#">Meet & Greet</a></li>
+            <li style="text-align: center">
+              <a href="#">Airports transfers</a>
+            </li>
+            <li style="text-align: center"><a href="#">Eurail</a></li>
           </ul>
         </section>
       </div>
+      <div class="skywards-login">
+        <img
+          src="skywards-tier-signup.png"
+          class="skywards-logo"
+          width="260px"
+          height="100.58px"
+        />
+        <div
+          class="sky-body"
+          style="
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            right: 30px;
+          "
+        >
+          <span
+            class="emirates-skywards"
+            style="
+              color: white;
+              font-size: 16px;
+              line-height: 25px;
+              font-weight: 700;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+            >Join Emirates Skywards</span
+          >
+          <span
+            class="sky-signup"
+            style="color: white; font-family: Arial, Helvetica, sans-serif"
+            >Become an Emirates Skywards member and start enjoying flight
+            rewards, upgrades and more</span
+          >
+        </div>
+        <a
+          href="#"
+          style="
+            text-align: center;
+            font-weight: 700;
+            padding: 5px 20px;
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 3px;
+            position: relative;
+            right: 30px;
+          "
+          >Join now</a
+        >
+      </div>
+      <section
+        class="fares-container"
+        style="font-family: Arial, Helvetica, sans-serif"
+      >
+        <div class="fares-destination" style="display: flex">
+          <h1 style="font-weight: 300; color: #333; margin-right: 0.6rem">
+            Featured destinations from
+          </h1>
+          <span style="display: inline-block">Bengaluru</span>
+        </div>
+      </section>
     </main>
   </body>
 </html>
