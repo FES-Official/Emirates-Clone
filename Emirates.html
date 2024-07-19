@@ -14,6 +14,9 @@
     <title>Emirates | Fly Better</title>
   </head>
   <style>
+    body {
+      background-color: #f6f6f6;
+    }
     * {
       padding: 0;
     }
@@ -302,7 +305,7 @@
       height: 60px;
       color: white;
       background-color: #c60c30;
-      padding-left: 0;
+      margin-left: 20px;
       text-align: center;
       border: 0;
       border-radius: 5px;
@@ -335,29 +338,49 @@
       padding: 0 120px;
       text-align: center;
     }
-    .fares-list-grid {
-      width: 1150px;
-      height: 622px;
-      position: relative;
-      margin-top: 1.9rem;
-      margin-left: -2.5rem;
-    }
     .fares-list-grid li {
+      margin-left: 3rem;
+      margin-bottom: 2rem;
       list-style-type: none;
-      width: 383px;
-      height: 311px;
-      position: absolute;
-      top: 0px;
-      padding-left: 50px;
+      display: inline-block;
+      background-color: white;
     }
     .fares-list-grid img {
       width: 333px;
       height: 111px;
     }
-    .fares-list-grid div {
-      width: 100%;
-      height: 111px;
-      display: table;
+    .fares-list-grid a {
+      color: black;
+    }
+    .experience-block {
+      width: 1263px;
+      height: 836px;
+    }
+    .block-title {
+      font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+      font-size: 3rem;
+      line-height: 3.75rem;
+      font-style: normal;
+      margin: 2rem 0;
+    }
+    .experience-heading {
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .experience-grid {
+      width: 1200px;
+      height: 544px;
+      margin: 31px;
+      display: block;
+    }
+    .grid-item-image {
+      width: 532px;
+      height: 399px;
+    }
+    .experience-grid a {
+      display: block;
+      float: left;
+      margin: 0 0 1rem 1rem;
     }
   </style>
   <body>
@@ -447,7 +470,7 @@
               <div>
                 <label>Departure Airport</label>
                 <br />
-                <select>
+                <select style="border: none">
                   <option>Ahamdabad</option>
                   <option>Mumbai</option>
                   <option>Delhi</option>
@@ -462,7 +485,7 @@
               <div>
                 <label>Arrival Airport</label>
                 <br />
-                <select>
+                <select style="border: none">
                   <option>Ahamdabad</option>
                   <option>Mumbai</option>
                   <option>Delhi</option>
@@ -556,14 +579,36 @@
         class="fares-container"
         style="font-family: Arial, Helvetica, sans-serif"
       >
-        <div class="fares-frid">
+        <div class="fares-destination">
+          <h2
+            style="
+              font-weight: 200;
+              font-size: 1.4rem;
+              margin-top: 0;
+              margin-right: 0.6rem;
+              display: inline-block;
+            "
+          >
+            Featured destinations from
+          </h2>
+          <div
+            style="
+              display: inline-block;
+              font-size: x-large;
+              font-weight: 700;
+              text-decoration: underline;
+            "
+          >
+            Bengaluru
+          </div>
+        </div>
+        <div class="fares-grid">
           <ul class="fares-list-grid">
             <li>
-              <a style="width: 333px; height: 261px"
-                ><img src="dubai.jpg" width="333px" height="111px" />
+              <a style="width: 333px"
+                ><img src="dubai.jpg" />
                 <div style="width: 333px">
                   <div
-                    class="dubai-business"
                     style="
                       font-family: Arial, Helvetica, sans-serif;
                       padding: 1.5rem;
@@ -571,6 +616,7 @@
                   >
                     <p
                       style="
+                        text-align: center;
                         font-size: 10px;
                         font-weight: 700;
                         line-height: 1.4rem;
@@ -595,7 +641,7 @@
                     <p
                       style="
                         text-align: center;
-                        font-size: 1rem;
+                        font-size: 11px;
                         font-weight: 200;
                         line-height: 1.6rem;
                         margin: 10px 0px;
@@ -603,68 +649,16 @@
                     >
                       Book Business Class Return until 22 Jul 24
                     </p>
-                    <p style="text-align: center">from INR 97,324*</p>
-                  </div>
-                </div></a
-              >
-            </li>
-            <li>
-              <a style="width: 333px; height: 261px"
-                ><img
-                  src="istockphoto-1352545319-612x612.jpg"
-                  width="333px"
-                  height="111px"
-                />
-                <div style="width: 333px">
-                  <div
-                    class="dubai-business"
-                    style="
-                      font-family: Arial, Helvetica, sans-serif;
-                      padding: 1.5rem;
-                    "
-                  >
-                    <p
-                      style="
-                        font-size: 10px;
-                        font-weight: 700;
-                        line-height: 1.4rem;
-                        letter-spacing: 0.4rem;
-                        text-transform: uppercase;
-                        padding: 0;
-                        margin: 0;
-                      "
-                    >
-                      United Arab Emirates
+                    <p style="text-align: center; font-size: 1.2rem">
+                      from INR 97,324*
                     </p>
-                    <h3
-                      style="
-                        text-align: center;
-                        margin: 0;
-                        padding: 0;
-                        font-size: 20px;
-                      "
-                    >
-                      Dubai
-                    </h3>
-                    <p
-                      style="
-                        text-align: center;
-                        font-size: 1rem;
-                        font-weight: 200;
-                        line-height: 1.6rem;
-                        margin: 10px 0px;
-                      "
-                    >
-                      Book Business Class Return until 22 Jul 24
-                    </p>
-                    <p style="text-align: center">from INR 97,324*</p>
                   </div>
                 </div></a
               >
             </li>
             <li>
               <a
-                ><img src="background.jpg" width="333px" height="111px" />
+                ><img src="Netherlands.avif" />
                 <div style="width: 333px">
                   <div
                     class="dubai-business"
@@ -675,6 +669,7 @@
                   >
                     <p
                       style="
+                        text-align: center;
                         font-size: 10px;
                         font-weight: 700;
                         line-height: 1.4rem;
@@ -684,7 +679,7 @@
                         margin: 0;
                       "
                     >
-                      United Arab Emirates
+                      Netherlands
                     </p>
                     <h3
                       style="
@@ -694,12 +689,12 @@
                         font-size: 20px;
                       "
                     >
-                      Dubai
+                      Amsterdam
                     </h3>
                     <p
                       style="
                         text-align: center;
-                        font-size: 1rem;
+                        font-size: 12px;
                         font-weight: 200;
                         line-height: 1.6rem;
                         margin: 10px 0px;
@@ -707,14 +702,16 @@
                     >
                       Book Business Class Return until 22 Jul 24
                     </p>
-                    <p style="text-align: center">from INR 97,324*</p>
+                    <p style="text-align: center; font-size: 1.2rem">
+                      from INR 283,407*
+                    </p>
                   </div>
                 </div></a
               >
             </li>
             <li>
               <a
-                ><img src="tree.jpg" width="333px" height="111px" />
+                ><img src="UAE.jpg" />
                 <div style="width: 333px">
                   <div
                     class="dubai-business"
@@ -725,6 +722,7 @@
                   >
                     <p
                       style="
+                        text-align: center;
                         font-size: 10px;
                         font-weight: 700;
                         line-height: 1.4rem;
@@ -749,26 +747,24 @@
                     <p
                       style="
                         text-align: center;
-                        font-size: 1rem;
+                        font-size: 12px;
                         font-weight: 200;
                         line-height: 1.6rem;
                         margin: 10px 0px;
                       "
                     >
-                      Book Business Class Return until 22 Jul 24
+                      Book first Class Return until 22 Jul 24
                     </p>
-                    <p style="text-align: center">from INR 97,324*</p>
+                    <p style="text-align: center; font-size: 1.2rem">
+                      from INR 312,739*
+                    </p>
                   </div>
                 </div></a
               >
             </li>
             <li>
               <a
-                ><img
-                  src="pngtree-rainbow-curves-abstract-colorful-background-image_2164067.jpg"
-                  width="333px"
-                  height="111px"
-                />
+                ><img src="london.webp" />
                 <div style="width: 333px">
                   <div
                     class="dubai-business"
@@ -779,6 +775,7 @@
                   >
                     <p
                       style="
+                        text-align: center;
                         font-size: 10px;
                         font-weight: 700;
                         line-height: 1.4rem;
@@ -788,7 +785,7 @@
                         margin: 0;
                       "
                     >
-                      United Arab Emirates
+                      United Kingdom
                     </p>
                     <h3
                       style="
@@ -798,12 +795,12 @@
                         font-size: 20px;
                       "
                     >
-                      Dubai
+                      London
                     </h3>
                     <p
                       style="
                         text-align: center;
-                        font-size: 1rem;
+                        font-size: 12px;
                         font-weight: 200;
                         line-height: 1.6rem;
                         margin: 10px 0px;
@@ -811,14 +808,16 @@
                     >
                       Book Business Class Return until 22 Jul 24
                     </p>
-                    <p style="text-align: center">from INR 97,324*</p>
+                    <p style="text-align: center; font-size: 1.2rem">
+                      from INR 331,681*
+                    </p>
                   </div>
                 </div></a
               >
             </li>
             <li>
               <a
-                ><img src="background.jpg" width="333px" height="111px" />
+                ><img src="New-work.jpg" width="333px" height="111px" />
                 <div style="width: 333px">
                   <div
                     class="dubai-business"
@@ -829,6 +828,7 @@
                   >
                     <p
                       style="
+                        text-align: center;
                         font-size: 10px;
                         font-weight: 700;
                         line-height: 1.4rem;
@@ -838,7 +838,7 @@
                         margin: 0;
                       "
                     >
-                      United Arab Emirates
+                      United states
                     </p>
                     <h3
                       style="
@@ -848,12 +848,12 @@
                         font-size: 20px;
                       "
                     >
-                      Dubai
+                      New Work
                     </h3>
                     <p
                       style="
                         text-align: center;
-                        font-size: 1rem;
+                        font-size: 12px;
                         font-weight: 200;
                         line-height: 1.6rem;
                         margin: 10px 0px;
@@ -861,12 +861,307 @@
                     >
                       Book Business Class Return until 22 Jul 24
                     </p>
-                    <p style="text-align: center">from INR 97,324*</p>
+                    <p style="text-align: center; font-size: 1.2rem">
+                      from INR 402,348*
+                    </p>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li>
+              <a
+                ><img src="san-francisco.avif" width="333px" height="111px" />
+                <div style="width: 333px">
+                  <div
+                    class="dubai-business"
+                    style="
+                      font-family: Arial, Helvetica, sans-serif;
+                      padding: 1.5rem;
+                    "
+                  >
+                    <p
+                      style="
+                        text-align: center;
+                        font-size: 10px;
+                        font-weight: 700;
+                        line-height: 1.4rem;
+                        letter-spacing: 0.4rem;
+                        text-transform: uppercase;
+                        padding: 0;
+                        margin: 0;
+                      "
+                    >
+                      United states
+                    </p>
+                    <h3
+                      style="
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 20px;
+                      "
+                    >
+                      Sen Francisco
+                    </h3>
+                    <p
+                      style="
+                        text-align: center;
+                        font-size: 12px;
+                        font-weight: 200;
+                        line-height: 1.6rem;
+                        margin: 10px 0px;
+                      "
+                    >
+                      Book Business Class Return until 22 Jul 24
+                    </p>
+                    <p style="text-align: center; font-size: 1.2rem">
+                      from INR 1,091,265*
+                    </p>
                   </div>
                 </div></a
               >
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="experience-block">
+        <div class="experience-heading">
+          <span
+            style="
+              font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+                Lucida Grande, sans-serif;
+              font-weight: 700;
+              font-size: 10px;
+              letter-spacing: 0.3rem;
+              line-height: 1.3rem;
+              color: #666;
+            "
+            >FLYING WITH EMIRATES</span
+          >
+          <h2 class="block-title">Make it an incredible journey</h2>
+          <p
+            style="
+              font-family: HelveticaNeue-Light, Helvetica Neue Light,
+                Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+              color: #666;
+              font-size: 1rem;
+            "
+          >
+            Explore the Emirates experience and plan an unforgettable trip
+            beyond your flight.
+          </p>
+        </div>
+        <div class="experience-grid">
+          <a href="#"
+            ><div style="width: 534px; height: 534px; background-color: white">
+              <div style="padding: 2rem 2rem 0; color: black">
+                <span
+                  style="
+                    text-align: left;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #666;
+                    font-weight: 700;
+                    font-size: 10px;
+                    letter-spacing: 0.3rem;
+                  "
+                  >DUBAI AND THE UAE</span
+                >
+                <h3
+                  style="
+                    font-size: 3rem;
+                    margin-top: 2rem;
+                    margin-bottom: 0;
+                    text-align: left;
+                  "
+                >
+                  Discover Dubai
+                </h3>
+                <span
+                  style="
+                    text-align: left;
+                    font-size: 15px;
+                    font-weight: 400;
+                    display: block;
+                    padding: 1rem 0 0;
+                    color: #666;
+                  "
+                  >Learn more</span
+                >
+              </div>
+              <img class="grid-item-image" src="item-image.avif" /></div
+          ></a>
+          <a href="#" style="width: 250px; height: 250px"
+            ><div style="background-color: white">
+              <div style="color: black; padding: 2rem 2rem 0">
+                <span
+                  style="
+                    display: block;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.3rem;
+                    color: #666;
+                  "
+                  >CABIN FEATURES</span
+                >
+                <h3
+                  style="
+                    text-align: center;
+                    line-height: 2.53rem;
+                    font-style: normal;
+                    position: relative;
+                    margin-bottom: 0;
+                    color: #333;
+                  "
+                >
+                  First class
+                </h3>
+                <span
+                  style="
+                    font-weight: 200;
+                    display: block;
+                    padding: 1rem 0 0;
+                    text-align: center;
+                    line-height: 1rem;
+                  "
+                  >Learn more</span
+                >
+              </div>
+              <img
+                src="first-class.jpg"
+                style="width: 250px; height: 135px"
+              /></div
+          ></a>
+          <a href="#" style="width: 250px; height: 250px"
+            ><div style="background-color: white">
+              <div style="color: black; padding: 2rem 2rem 0">
+                <span
+                  style="
+                    display: block;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.3rem;
+                    color: #666;
+                  "
+                  >CABIN FEATURES</span
+                >
+                <h3
+                  style="
+                    text-align: center;
+                    line-height: 2.53rem;
+                    font-style: normal;
+                    position: relative;
+                    margin-bottom: 0;
+                    color: #333;
+                  "
+                >
+                  Business Class
+                </h3>
+                <span
+                  style="
+                    font-weight: 200;
+                    display: block;
+                    padding: 1rem 0 0;
+                    text-align: center;
+                    line-height: 1rem;
+                  "
+                  >Learn more</span
+                >
+              </div>
+              <img
+                src="business-clas.jpg"
+                style="width: 250px; height: 135px"
+              /></div
+          ></a>
+          <a href="#" style="width: 250px; height: 250px"
+            ><div style="background-color: white">
+              <div style="color: black; padding: 2rem 2rem 0">
+                <span
+                  style="
+                    display: block;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.3rem;
+                    color: #666;
+                  "
+                  >CABIN FEATURES</span
+                >
+                <h3
+                  style="
+                    text-align: center;
+                    line-height: 2.53rem;
+                    font-style: normal;
+                    position: relative;
+                    margin-bottom: 0;
+                    color: #333;
+                  "
+                >
+                  Premium Economy
+                </h3>
+                <span
+                  style="
+                    font-weight: 200;
+                    display: block;
+                    padding: 1rem 0 0;
+                    text-align: center;
+                    line-height: 1rem;
+                  "
+                  >Learn more</span
+                >
+              </div>
+              <img
+                src="premium-economy-menu-w800x600.jpg"
+                style="width: 250px; height: 130px"
+              /></div
+          ></a>
+          <a href="#" style="width: 250px; height: 250px"
+            ><div style="background-color: white">
+              <div style="color: black; padding: 2rem 2rem 0">
+                <span
+                  style="
+                    display: block;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.3rem;
+                    color: #666;
+                  "
+                  >CABIN FEATURES</span
+                >
+                <h3
+                  style="
+                    text-align: center;
+                    line-height: 2.53rem;
+                    font-style: normal;
+                    position: relative;
+                    margin-bottom: 0;
+                    color: #333;
+                  "
+                >
+                  Economy Class
+                </h3>
+                <span
+                  style="
+                    font-weight: 200;
+                    display: block;
+                    padding: 1rem 0 0;
+                    text-align: center;
+                    line-height: 1rem;
+                  "
+                  >Learn more</span
+                >
+              </div>
+              <img
+                src="economy-class-chocolate-dessert-w800x600.jpg"
+                style="width: 250px; height: 135px"
+              /></div
+          ></a>
         </div>
       </section>
     </main>

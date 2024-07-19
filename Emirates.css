@@ -1,0 +1,368 @@
+body {
+    background-color: #f6f6f6;
+  }
+  * {
+    padding: 0;
+  }
+  nav button {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  nav {
+    display: flex;
+    background-color: black;
+    width: 1263px;
+    height: 55px;
+  }
+  .login {
+    margin-left: 700px;
+    padding-right: 60px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    transform: translateX(250px);
+  }
+  a {
+    padding: 20px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  }
+  nav .logo {
+    transform: translateX(100px);
+    width: 120px;
+    height: 130px;
+    background-image: url("logo-emirates.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img {
+    overflow: hidden;
+    width: 1263px;
+    height: 460px;
+  }
+  .hero-title {
+    padding: 0px 60px;
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    transform: translateY(1rem);
+  }
+  .hero-subheading {
+    font-family: Emirates-Bold, Arial, Lucida Grande, sans-serif;
+    font-size: 2rem;
+    line-height: normal;
+    font-weight: bolder;
+    display: block;
+    padding-left: 2.1rem;
+    position: absolute;
+    transform: skew(-13deg);
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.2rem;
+  }
+  .heading-wrap {
+    margin-top: 5px;
+    display: inline-block;
+    top: 50px;
+  }
+  @media only screen and (min-width: 769px) {
+    .hero-heading {
+      font-size: 4rem;
+      line-height: 8rem;
+    }
+  }
+  .hero-heading {
+    font-family: Heroic-Medium, Arial Narrow Bold, Franklin Gothic Medium,
+      Franklin Gothic, Arial Narrow, HelveticaNeue, Helvetica, arial,
+      sans-serif;
+    font-weight: 400;
+    padding: 0px 0px 13px 22px;
+    transform: skew(-13deg);
+    color: #fff;
+    margin: 0;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+    display: block;
+  }
+  .hero-discription {
+    padding-right: 0.4rem;
+    padding-left: 2.2rem;
+    float: right;
+    font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    line-height: normal;
+    transform: skew(-13deg);
+    letter-spacing: 0.2rem;
+  }
+  .learn {
+    font-weight: 700;
+    background-color: #d71921;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    display: block;
+    float: right;
+    padding: 11px;
+    font-size: 18px;
+    line-height: 1.61rem;
+  }
+  @media only screen and (min-width: 1024px) {
+    .widget-container {
+      max-width: 1200px;
+      padding-left: 50px;
+      height: 233px;
+    }
+  }
+  .widget-container {
+    transform: translateY(-70px);
+    width: 1200px;
+  }
+  .container-items {
+    width: 1100px;
+    height: 250px;
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.19);
+  }
+  .maincontant {
+    display: block;
+  }
+  .hero-title a {
+    width: 150px;
+  }
+  .items-grid {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .items-grid li:hover {
+    border-bottom: 4px solid #d71921;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 1024px) {
+    .items-grid {
+      white-space: nowrap;
+      margin: 2px;
+    }
+  }
+  .items-grid li {
+    position: relative;
+    padding: 20px 10px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    list-style: none;
+    border-bottom: 4px solid black;
+  }
+  .serach-flights {
+    height: 147px;
+    width: 1058px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 1rem;
+  }
+  fieldset {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    width: 1054px;
+    height: 32px;
+    border: 0;
+    padding: 0;
+  }
+  .switch-button1 {
+    border: 2px solid rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95.11px;
+    height: 30px;
+    padding: 0.3rem 3rem 0.7rem;
+    margin-right: -6px;
+    padding-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .switch-button2 {
+    border: 2px solid rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transform: translateY(1px) translateX(5px);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100.56px;
+    height: 30px;
+    margin-right: 2rem;
+    padding-left: 45px;
+    padding: 0.3rem 3rem 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .flight-controls {
+    width: 1082px;
+    height: 100px;
+    margin-top: 15px;
+    transform: translateY(-120px);
+  }
+  .departure-arrival {
+    display: flex;
+    padding-left: 0;
+    padding-left: 24px;
+    transform: translateY(30px);
+  }
+
+  .inline-link {
+    font-weight: 400;
+    color: #d71921;
+    text-decoration: underline;
+    position: absolute;
+    padding-top: 5px;
+    top: 0;
+    right: 0;
+    text-align: right;
+  }
+  .departure-dropdown,
+  .arrival-dropdown {
+    width: 411.9px;
+    height: 60px;
+    border: 2px solid rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  .arrival-dropdown div {
+    padding: 10px 10px 10px;
+  }
+  .departure-dropdown div {
+    padding: 10px 10px 10px;
+  }
+  @media only screen and (min-width: 1024px) {
+    .product-block {
+      max-width: 1200px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  .product-block li {
+    list-style-type: none;
+    width: 137.25px;
+    display: table-cell;
+    height: 119px;
+    border: 1px solid #d8d8d8;
+    border-bottom: white;
+  }
+  .product-block ul {
+    display: table;
+    list-style: none;
+  }
+  .product-block li a {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-weight: 400;
+    width: 136.25px;
+    height: 101px;
+    padding: 29px 0px 22px;
+  }
+  .continue button {
+    width: 195.59px;
+    height: 60px;
+    color: white;
+    background-color: #c60c30;
+    margin-left: 20px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .skywards-login {
+    width: 1100px;
+    height: 60.58px;
+    margin: 25px auto;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 5px solid black;
+    border-radius: 5px;
+  }
+  .skywards-logo {
+    width: 260px;
+    height: 100.58px;
+  }
+  .fares-container {
+    width: 1200px;
+    height: 777px;
+    padding-left: 50px;
+  }
+  .fares-destination {
+    padding: 0 120px;
+    text-align: center;
+  }
+  .fares-list-grid li {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+    display: inline-block;
+    background-color: white;
+  }
+  .fares-list-grid img {
+    width: 333px;
+    height: 111px;
+  }
+  .fares-list-grid a {
+    color: black;
+  }
+  .experience-block {
+    width: 1263px;
+    height: 836px;
+  }
+  .block-title {
+    font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-style: normal;
+    margin: 2rem 0;
+  }
+  .experience-heading {
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .experience-grid {
+    width: 1200px;
+    height: 544px;
+    margin: 31px;
+    display: block;
+  }
+  .grid-item-image {
+    width: 532px;
+    height: 399px;
+  }
+  .experience-grid a {
+    display: block;
+    float: left;
+    margin: 0 0 1rem 1rem;
+  }
