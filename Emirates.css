@@ -131,7 +131,7 @@ body {
   }
   .widget-container {
     transform: translateY(-70px);
-    width: 1200px;
+    width: 1100px;
   }
   .container-items {
     width: 1100px;
@@ -302,6 +302,9 @@ body {
     font-size: 16px;
     font-weight: 700;
   }
+
+  /*Emirates Skywards*/
+
   .skywards-login {
     width: 1100px;
     height: 60.58px;
@@ -319,6 +322,9 @@ body {
     width: 260px;
     height: 100.58px;
   }
+
+  /*Featured Destinations*/
+
   .fares-container {
     width: 1200px;
     height: 777px;
@@ -327,6 +333,19 @@ body {
   .fares-destination {
     padding: 0 120px;
     text-align: center;
+  }
+  .fares-destination h2{
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-right: 0.6rem;
+    display: inline-block;
+  }
+  .fares-destination div{
+    display: inline-block;
+   font-size: x-large;
+   font-weight: 700;
+   text-decoration: underline;
   }
   .fares-list-grid li {
     margin-left: 3rem;
@@ -341,6 +360,9 @@ body {
   }
   .fares-list-grid a {
     color: black;
+  }
+  .fares-budget{
+    width: 333px;
   }
   .experience-block {
     width: 1263px;
@@ -357,10 +379,26 @@ body {
     text-align: center;
     padding: 20px 10px;
   }
+  .experience-heading span{
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+                Lucida Grande, sans-serif;
+              font-weight: 700;
+              font-size: 10px;
+              letter-spacing: 0.3rem;
+              line-height: 1.3rem;
+              color: #666;
+  }
+  .experience-heading p{
+    font-family: HelveticaNeue-Light, Helvetica Neue Light,
+                Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+              color: #666;
+              font-size: 1rem;
+  }
   .experience-grid {
     width: 1200px;
     height: 544px;
     margin: 31px;
+    margin-right: 0;
     display: block;
   }
   .grid-item-image {
@@ -371,6 +409,17 @@ body {
     display: block;
     float: left;
     margin: 0 0 1rem 1rem;
+  }
+  .firstdiv{
+    width: 534px;
+    height: 534px; 
+    background-color: white;
+  }
+  .seconddivh3{
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    text-align: left;
   }
   .primary-links {
     width: 1263px;
@@ -383,11 +432,12 @@ body {
     width: 250px;
     height: 250px;
   }
+
   /*About us*/
 
   .primary-container {
     width: 1200px;
-    height: 424px;
+    height: 400px;
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
@@ -459,17 +509,12 @@ body {
     transition: all 0.5s ease;
   }
 
-  /*For iPad pro*/
+  /*---------------------------------For iPad pro-----------------------------*/
 
   @media only screen and (max-width:1024px){
     *{
         padding: 0;
-        max-width: 1024px;
         transition: all 0.5s ease;
-    }
-    .maincontant{
-      max-width: 1024px;
-      max-height: 3858px;
     }
     .logo{
         width: 90px;
@@ -585,7 +630,6 @@ body {
       overflow: hidden;
     }
     .experience-heading{
-      padding: 30px 30px;
       width: 943px;
       height: 142px;
       transition: all 0.5s ease;
@@ -622,8 +666,7 @@ body {
     .primary-container{
       width: 1007px;
       height: 424px;
-      padding-left: 50px;
-    padding-right: 50px;
+      padding: 0;
     }
     .primary-section-heading{
       width: 907px;
@@ -634,7 +677,7 @@ body {
     }
   }
 
-/*For iphone 14 pro max*/
+/*-------------------------------For iphone 14 pro max------------------------*/
 
   @media (max-width:430px){
     .maincontant{
@@ -722,7 +765,6 @@ body {
     }
     .hero-image{
         width: 430px;
-        filter: brightness(60%);
         transition: all 0.5s ease;
     }
     .widget-container{
@@ -737,6 +779,9 @@ body {
       margin: 0 auto;
     }
     .serach-flights{
+      width: 350px;
+      height: 70px;
+      padding: 0;
       visibility: hidden;
     }
     .flights-toggle{
@@ -752,10 +797,799 @@ body {
       visibility: hidden;
     }
     .flight-controls{
+      width: 300px;
+      height: 100px;
       visibility: hidden;
     }
-    .items-grid{
-    }
     .items-grid li{
+      display: inline-block;
+    }
+    .product-block{
+      width: 410px;
+      height: 126px;
+      margin: 20px auto;
+    }
+    .product-block-container{
+      width: 410px;
+      height: 126px;
+    }
+    .product-block-container ul{
+      width: 420px;
+      height: 126px;
+      overflow-x: scroll;
+      overflow-y: scroll;
+      text-align: center;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      white-space: nowrap;
+      border-spacing: 1rem 0;
+        margin-left: -1rem;
+    }
+    .product-block-container ul li{
+      position: relative;
+      top: -205px;
+      min-width: 120px;
+        max-width: 120px;
+        border: none;
+      border-radius: 3px;
+      background: #fff;
+        box-shadow: 0 2px 4px 2px rgba(0, 0, 0, .1);
+    }
+    .product-block-container ul li a{
+      font-weight: 700;
+    }
+    .skywards-login{
+      position: relative;
+      top: -200px;
+      margin: 20px 10px;
+        border-radius: 5px;
+      width: 300px;
+      height: 261px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .sky-signup{
+      font-size: 14px;
+      line-height: 18px;
+      position: relative;
+      left: 30px;
+    }
+    .skywards-login a{
+      position: relative;
+    }
+    .fares-container {
+      position: relative;
+      top: -190px;
+      width: 430px;
+      height: 2027px;
+      padding-left: 0;
+    }
+    .fares-destination {
+      position: relative;
+      bottom: 20px;
+      width: 170px;
+      height: 37px;
+      padding: 0 120px;
+      text-align: center;
+    }
+    .fares-list-grid{
+      width: 410px;
+      height: 1813px;
+    }
+    .fares-list-grid li {
+      border: 2px solid rgb(0, 0, 0,0.5);
+      width: 420px;
+      height: 300px;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      list-style-type: none;
+      display: inline-block;
+      background-color: white;
+    }
+    .fares-list-grid img {
+      width: 410px;
+      height: 136px;
+    }
+    .fares-list-grid a {
+      color: black;
+    }
+    .fares-budget{
+      width: 410px;
+      height: 132px;
+    }
+    .fares-destination h2{
+      font-size: 30px;
+    }
+    .fares-destination h2{
+      font-weight: 200;
+      font-size: 13.4px;
+      margin-top: 0;
+      margin-right: 0.6rem;
+      display: inline-block;
+    }
+    .fares-destination div{
+      display: inline-block;
+     font-size: 1rem;
+     font-weight: 700;
+     margin-bottom: 10px;
+     text-decoration: underline;
+    }
+    .experience-block {
+      position: relative;
+      top: -200px;
+      width: 430px;
+      height: 2401px;
+    }
+    .block-title {
+      font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+      font-size: 3rem;
+      line-height: 3.75rem;
+      font-style: normal;
+      margin: 2rem 0;
+    }
+    .experience-heading {
+      width: 430px;
+      height: 301px;
+      text-align: center;
+      position: relative;
+    }
+    .experience-grid {
+      width: 420px;
+      height: 2100px;
+      display: block;
+    }
+    .grid-item-image {
+      width: 408px;
+      height: 260px;
+    }
+    .seconddivh3{
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .experience-grid a {
+      width: 420px;
+      height: 410px;
+      display: block;
+      float: left;
+      margin-bottom: 0;
+      border: 1px solid black;
+    }
+    .primary-links {
+      width: 1263px;
+      height: 424px;
+    }
+    .experience-grid-firstclass,
+    .experience-grid-businessclass,
+    .experience-grid-premiumclass,
+    .experience-grid-economyclass{
+      width: 250px;
+      height: 250px;
+    }
+    .experience-heading span{
+      font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+                  Lucida Grande, sans-serif;
+                font-weight: 700;
+                font-size: 10px;
+                letter-spacing: 0.3rem;
+                line-height: 1.3rem;
+                color: #666;
+    }
+    .block-title{
+      width: 390px;
+      height: 100px;
+      font-size: 30px;
+    }
+    .experience-heading p{
+      width: 390px;
+      height: 32px;
+      font-family: HelveticaNeue-Light, Helvetica Neue Light,
+                  Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+                color: #666;
+                font-size: 14px;
+    }
+    .firstdiv{
+      width: 410px;
+      height: 410px;
+    }
+
+    /*About us*/
+
+    .primary-container {
+      width: 430px;
+      height: 499px;
+      margin: auto;
+      position: relative;
+    }
+    .primary-section-heading {
+      width: 430px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin: 0;
+      display: block;
+      text-align: center;
+      line-height: normal;
+    }
+    .primary-discription {
+      width: 430px;
+      height: 32px;
+      font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+        Lucida Grande, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      line-height: normal;
+      color: #333;
+      font-weight: 300;
+    }
+    .primary-container ul {
+      list-style-type: none;
+      width: 430px;
+      height: 317px;
+      overflow-x: scroll;
+        overflow-y: hidden;
+        text-align: center;
+        white-space: nowrap;
+      padding: 0;
+      margin: 0;
+    }
+    .primary-container ul li {
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-block;
+      text-align: center;
+      width: 220px;
+      min-width: 200px;
+      padding-bottom: 10px;
+      vertical-align: text-top;
+      position: relative;
+    }
+    .primary-container ul li .rounded-image {
+      width: 165px;
+      height: 165px;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+      border: 1px solid #d8d8d8;
+      box-shadow: inset 5px 3px 3px 0 rgba(0, 0, 0, 0.04);
+      margin: 15px auto 0;
+    }
+    .primary-container ul li img{
+      width: 100%;
+      height: 100%;
+    }
+    .primary-container ul li span {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      display: inline-block;
+      color: #333;
+    }
+    .primary-container ul .rounded-image:hover {
+      scale: 1.1;
+      transition: all 0.5s ease;
+    }
+    .primary-links{
+      width: 430px;
+      height: 499px;
+    }
+  }
+
+/* -------------------------------For Mobile redmi 13C-------------------------- */
+
+  @media only screen and (max-width: 720px){
+    body {
+      background-color: #f6f6f6;
+    }
+    * {
+      padding: 0;
+    }
+    nav button {
+      background-color: black;
+      border: 1px solid black;
+      color: white;
+      font-size: 14px;
+      font-weight: bolder;
+    }
+    nav {
+      display: flex;
+      background-color: black;
+      width: 720px;
+      height: 55px;
+    }
+    .login {
+      margin-left: 700px;
+      padding-right: 60px;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 10px;
+      align-items: center;
+      list-style: none;
+      position: absolute;
+      top: 10px;
+      transform: translateX(250px);
+    }
+    a {
+      padding: 20px 10px 15px;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+    }
+    nav .logo {
+      transform: translateX(100px);
+      width: 120px;
+      height: 130px;
+      background-image: url("logo-emirates.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    img {
+      overflow: hidden;
+      width: 1263px;
+      height: 460px;
+    }
+    .hero-title {
+      padding: 0px 60px;
+      position: absolute;
+      top: 150px;
+      display: inline-block;
+      transform: translateY(1rem);
+    }
+    .hero-subheading {
+      font-family: Emirates-Bold, Arial, Lucida Grande, sans-serif;
+      font-size: 2rem;
+      line-height: normal;
+      font-weight: bolder;
+      display: block;
+      padding-left: 2.1rem;
+      position: absolute;
+      transform: skew(-13deg);
+      color: #fff;
+      text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+      letter-spacing: 0.2rem;
+    }
+    .heading-wrap {
+      margin-top: 5px;
+      display: inline-block;
+      top: 50px;
+    }
+    @media only screen and (min-width: 769px) {
+      .hero-heading {
+        font-size: 4rem;
+        line-height: 8rem;
+      }
+    }
+    .hero-heading {
+      font-family: Heroic-Medium, Arial Narrow Bold, Franklin Gothic Medium,
+        Franklin Gothic, Arial Narrow, HelveticaNeue, Helvetica, arial,
+        sans-serif;
+      font-weight: 400;
+      padding: 0px 0px 13px 22px;
+      transform: skew(-13deg);
+      color: #fff;
+      margin: 0;
+      text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+      display: block;
+    }
+    .hero-discription {
+      padding-right: 0.4rem;
+      padding-left: 2.2rem;
+      float: right;
+      font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+      font-weight: bold;
+      line-height: normal;
+      transform: skew(-13deg);
+      letter-spacing: 0.2rem;
+    }
+    .learn {
+      font-weight: 700;
+      background-color: #d71921;
+      border-radius: 5px;
+      position: relative;
+      text-align: center;
+      display: block;
+      float: right;
+      padding: 11px;
+      font-size: 18px;
+      line-height: 1.61rem;
+    }
+    @media only screen and (min-width: 1024px) {
+      .widget-container {
+        max-width: 1200px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 233px;
+      }
+    }
+    .widget-container {
+      transform: translateY(-70px);
+      width: 1100px;
+    }
+    .container-items {
+      width: 1100px;
+      height: 250px;
+      background-color: white;
+      border-radius: 0.3rem;
+      box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.19);
+    }
+    .maincontant {
+      display: block;
+    }
+    .hero-title a {
+      width: 150px;
+    }
+    .items-grid {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+    }
+    .items-grid li:hover {
+      border-bottom: 4px solid #d71921;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    @media only screen and (min-width: 1024px) {
+      .items-grid {
+        white-space: nowrap;
+        margin: 2px;
+      }
+    }
+    .items-grid li {
+      position: relative;
+      padding: 20px 10px;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      list-style: none;
+      border-bottom: 4px solid black;
+    }
+    .serach-flights {
+      height: 147px;
+      width: 1058px;
+      padding: 20px;
+      padding-top: 5px;
+      padding-bottom: 1rem;
+    }
+    fieldset {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 1rem;
+      width: 1054px;
+      height: 32px;
+      border: 0;
+      padding: 0;
+    }
+    .switch-button1 {
+      border: 2px solid rgb(0, 0, 0, 0.5);
+      border-radius: 5px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 95.11px;
+      height: 30px;
+      padding: 0.3rem 3rem 0.7rem;
+      margin-right: -6px;
+      padding-left: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .switch-button2 {
+      border: 2px solid rgb(0, 0, 0, 0.5);
+      border-radius: 5px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      transform: translateY(1px) translateX(5px);
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100.56px;
+      height: 30px;
+      margin-right: 2rem;
+      padding-left: 45px;
+      padding: 0.3rem 3rem 0.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .flight-controls {
+      width: 1082px;
+      height: 100px;
+      margin-top: 15px;
+      transform: translateY(-120px);
+    }
+    .departure-arrival {
+      display: flex;
+      padding-left: 0;
+      padding-left: 24px;
+      transform: translateY(30px);
+    }
+  
+    .inline-link {
+      font-weight: 400;
+      color: #d71921;
+      text-decoration: underline;
+      position: absolute;
+      padding-top: 5px;
+      top: 0;
+      right: 0;
+      text-align: right;
+    }
+    .departure-dropdown,
+    .arrival-dropdown {
+      width: 411.9px;
+      height: 60px;
+      border: 2px solid rgb(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+    .arrival-dropdown div {
+      padding: 10px 10px 10px;
+    }
+    .departure-dropdown div {
+      padding: 10px 10px 10px;
+    }
+    @media only screen and (min-width: 1024px) {
+      .product-block {
+        max-width: 1200px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+    .product-block li {
+      list-style-type: none;
+      width: 137.25px;
+      display: table-cell;
+      height: 119px;
+      border: 1px solid #666;
+    }
+    .product-block ul {
+      display: table;
+      list-style: none;
+    }
+    .product-block li a {
+      top: 50px;
+      text-decoration: underline;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #666;
+      font-weight: 400;
+      width: 136.25px;
+      height: 101px;
+      padding: 5px;
+    }
+    .product-block i{
+      position: relative;
+      top: 50px;
+    }
+    .continue button {
+      width: 195.59px;
+      height: 60px;
+      color: white;
+      background-color: #c60c30;
+      margin-left: 20px;
+      text-align: center;
+      border: 0;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  
+    /*Emirates Skywards*/
+  
+    .skywards-login {
+      width: 1100px;
+      height: 60.58px;
+      margin: 25px auto;
+      display: flex;
+      background-color: black;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      border: 5px solid black;
+      border-radius: 5px;
+    }
+    .skywards-logo {
+      width: 260px;
+      height: 100.58px;
+    }
+  
+    /*Featured Destinations*/
+  
+    .fares-container {
+      width: 1200px;
+      height: 777px;
+      padding-left: 50px;
+    }
+    .fares-destination {
+      padding: 0 120px;
+      text-align: center;
+    }
+    .fares-destination h2{
+      font-weight: 200;
+      font-size: 1.4rem;
+      margin-top: 0;
+      margin-right: 0.6rem;
+      display: inline-block;
+    }
+    .fares-destination div{
+      display: inline-block;
+     font-size: x-large;
+     font-weight: 700;
+     text-decoration: underline;
+    }
+    .fares-list-grid li {
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+      list-style-type: none;
+      display: inline-block;
+      background-color: white;
+    }
+    .fares-list-grid img {
+      width: 333px;
+      height: 111px;
+    }
+    .fares-list-grid a {
+      color: black;
+    }
+    .fares-budget{
+      width: 333px;
+    }
+    .experience-block {
+      width: 1263px;
+      height: 836px;
+    }
+    .block-title {
+      font-family: Emirates-Bold, Helvetica, Arial, Lucida Grande, sans-serif;
+      font-size: 3rem;
+      line-height: 3.75rem;
+      font-style: normal;
+      margin: 2rem 0;
+    }
+    .experience-heading {
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .experience-heading span{
+      font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+                  Lucida Grande, sans-serif;
+                font-weight: 700;
+                font-size: 10px;
+                letter-spacing: 0.3rem;
+                line-height: 1.3rem;
+                color: #666;
+    }
+    .experience-heading p{
+      font-family: HelveticaNeue-Light, Helvetica Neue Light,
+                  Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+                color: #666;
+                font-size: 1rem;
+    }
+    .experience-grid {
+      width: 1200px;
+      height: 544px;
+      margin: 31px;
+      margin-right: 0;
+      display: block;
+    }
+    .grid-item-image {
+      width: 532px;
+      height: 399px;
+    }
+    .experience-grid a {
+      display: block;
+      float: left;
+      margin: 0 0 1rem 1rem;
+    }
+    .firstdiv{
+      width: 534px;
+      height: 534px; 
+      background-color: white;
+    }
+    .seconddivh3{
+      font-size: 3rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .primary-links {
+      width: 1263px;
+      height: 424px;
+    }
+    .experience-grid-firstclass,
+    .experience-grid-businessclass,
+    .experience-grid-premiumclass,
+    .experience-grid-economyclass{
+      width: 250px;
+      height: 250px;
+    }
+  
+    /*About us*/
+  
+    .primary-container {
+      width: 1200px;
+      height: 400px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: auto;
+      position: relative;
+      padding-bottom: 40px;
+    }
+    .primary-section-heading {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      padding-top: 47px;
+      margin: 0;
+      display: block;
+      text-align: center;
+      line-height: normal;
+    }
+    .primary-discription {
+      font-family: HelveticaNeue, Helvetica Neue, Helvetica, Arial,
+        Lucida Grande, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      line-height: normal;
+      color: #333;
+      font-weight: 300;
+    }
+    .primary-container ul {
+      list-style-type: none;
+      width: 100%;
+      text-align: center;
+      max-width: none;
+      padding: 0;
+      margin: 0;
+    }
+    .primary-container ul li {
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-block;
+      text-align: center;
+      width: 220px;
+      min-width: 200px;
+      padding-bottom: 10px;
+      vertical-align: text-top;
+      position: relative;
+    }
+    .primary-container ul li .rounded-image {
+      width: 165px;
+      height: 165px;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+      border: 1px solid #d8d8d8;
+      box-shadow: inset 5px 3px 3px 0 rgba(0, 0, 0, 0.04);
+      margin: 15px auto 0;
+    }
+    .primary-container ul li img{
+      width: 100%;
+      height: 100%;
+    }
+    .primary-container ul li span {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      display: inline-block;
+      color: #333;
+    }
+    .primary-container ul .rounded-image:hover {
+      scale: 1.1;
+      transition: all 0.5s ease;
     }
   }
