@@ -78,12 +78,7 @@ body {
     display: inline-block;
     top: 50px;
   }
-  @media only screen and (min-width: 769px) {
-    .hero-heading {
-      font-size: 4rem;
-      line-height: 8rem;
-    }
-  }
+
   .hero-heading {
     font-family: Heroic-Medium, Arial Narrow Bold, Franklin Gothic Medium,
       Franklin Gothic, Arial Narrow, HelveticaNeue, Helvetica, arial,
